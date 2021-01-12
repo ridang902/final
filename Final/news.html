@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="edu.css">
+<title>Dang University</title>
+
+<div class= "homelogo" style=" position:fixed;z-index:100; padding-top: 20px; margin-left: 37px; ">
+<a href="index.html">
+<img border="0" src="logo.png" alt="logo" style="height:100px;"></a>
+</div>
+
+</head>
+<body>
+
+<div class="parallax"></div>
+
+<div class="topnav" id="myTopnav">
+ <div class="centernav">
+  <a href="index.html">Home</a>
+  
+  <a href="news.html">News</a>
+  
+  <a href="visit.html">Visit</a>
+  
+    <form action="campuslife.html" method="get"> 
+    <div class="dropdown">
+    <button class="dropbtn">Campus Life 
+    </button>
+    <div class="dropdown-content">
+      <a href="athletics.html">Athletics</a>
+      <a href="events.html">Events</a>
+    </div>
+  </div> 
+  </form>
+
+  <a href="about.html">About</a>
+
+    <form action="admissions.html" method="get">
+    <div class="dropdown">
+    <button class="dropbtn">Admissions 
+    </button>
+    <div class="dropdown-content">
+      <a href="courses.html">Courses</a>     
+      <a href="housing.html">Housing</a>   
+    </div>
+  </div> 
+  </form>
+
+  <a href="signup.html">Sign Up</a>
+
+    <form action="login.html" method="get">
+    <div class="dropdown">
+    <button class="dropbtn">Login
+    </button>
+    <div class="dropdown-content">
+	<a onclick="logout()" href="#">Log Out</a>    
+    </div>
+  </div> 
+  </form>
+
+    </div>
+  <a href="javascript:void(0);" style="font-size:27px;" class="icon" onclick="myFunction()">&#9776;Menu</a>
+  
+</div>
+
+<div class="parallax">
+  <div class="caption">
+  <span style= "font-size: 3.7vw;  opacity: 0.69;" class="border">News</span>
+  </div>
+</div>
+
+  <h1 style="text-align:center; color: white;">Dang University Today</h1>
+  <p style="text-align:center; font-size: 21px; font-weight:bold;color: white;">The Lastest News from Dang University</p>
+
+
+<!-- News, Placeholder images/links for News -->
+
+	<div class="newscontainer">
+      <table id="table1" align="center">
+         <thead>
+            <tr> 	
+               <th>	
+		<div class= "card">
+		<a href="news1.html"><img src="news1.jpg" alt="News1" style="width:100%; height: 50%;">
+		<p>Prohibido Tocar Statue</p></a>
+		<p>Someone touched the "Prohibited Touching" statue and got arrested.</p> 
+
+	<a href="news1.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+
+               <th>  
+		<div class= "card">    
+		<a href="news2.html">
+      <img src="news2.jpg" alt="News2" style="width:100%;height: 50%;">
+	<p>Christmas</p></a>
+      <p>Christmas is coming.</p>
+
+	<a href="news2.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+
+		<th>     
+		<div class= "card">    
+	<a href="news3.html">
+      <img src="news3.jpg" alt="News3" style="width:100%;height: 50%;">      
+	<p>Swiss Army Knife</p></a>
+      <p>This collector's item costs approximately 5,000 USD!!!.</p>
+
+	<a href="news3.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+            </tr>
+         </thead>
+
+      <tbody>
+            <tr> 	
+               <th>	
+		<div class= "card">
+		<a href="news4.html"><img src="news4.jpg" alt="News4" style="width:100%; height:50%;">
+		<p>Landslide</p></a>
+		<p>A massive landslide</p> 
+
+	<a href="news4.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+
+               <th>  
+		<div class= "card">    
+		<a href="news5.html">
+      <img src="news5.jpg" alt="News5" style="width:100%; height:50%;">
+	<p>Horse</p></a>
+      <p>Breaking news, horse looking and judging us.</p>
+
+	<a href="news5.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+
+		<th>     
+		<div class= "card">    
+	<a href="news6.html">
+      <img src="news6.jpg" alt="News6" style="width:100%; height:50%;">      
+	<p>Law & Policy</p></a>
+      <p>Immigrants don't move state-to-state in search of health benefits</p>
+
+	<a href="news6.html">
+  <div class="readstory"><p>Read Story <img src="right.png">
+		</p>
+		</div>
+		</th>
+            </tr>
+      </tbody>
+      </table>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="edu.js"type="text/javascript"></script>
+
+</body>
+<footer>
+
+<div class = "contact">
+  <a href="contact.html">Contact Us</a>
+
+<!-- search -->
+
+<ul id="search"> 
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+    <li class= "active">
+   	 <i class="fa fa-search" aria-hidden="true"></i>
+  	  <div class ="search-box">
+      	<input name= "sitesearch" placeholder= "Search..." required>
+        <button class= "button"  type="submit">Search</button>
+      </div>
+      </li>
+	</form>
+	</ul>
+    
+</div>
+
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+<hr>
+
+<div class = "copyright">
+<p>© 2019 Richard Dang</p>
+</div>
+</footer>
+</html>

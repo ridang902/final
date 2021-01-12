@@ -1,0 +1,112 @@
+body, html{
+    font-family: Consolas, monaco, monospace; 
+}
+
+.topnav {
+  position: -webkit-sticky;
+  position: fixed;  
+  top: 0;
+  background-color:white;   
+  list-style: none;
+  float: left; 
+  width: 100%;
+  z-index: 1;
+  box-shadow: -7px 7px 14px -7px;
+  margin-top: 0px;
+}
+
+.page {
+ text-align: center;
+ width: 100%;
+ padding: 10px;
+ padding-top: 137px;
+}
+
+.signup-form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 337px;
+  margin: 0 auto;
+}
+
+.form {
+  background-color: #f1f1f1;
+  padding: 20px;
+  width: 337px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 50px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size:13px;
+  font-family: Consolas, monaco, monospace; 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  font-size:15px;
+  text-transform: capitalize;
+  font-family: Consolas, monaco, monospace; 
+  cursor: pointer;
+}
+
+.userbutton{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 50px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size:13px;
+  font-family: Consolas, monaco, monospace; 
+  background-color: #4CAF50;
+  color: white;
+  font-size:15px;
+  text-transform: capitalize;
+  font-family: Consolas, monaco, monospace; 
+  cursor: pointer;
+}
+
+/* Sign Up validator */
+
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

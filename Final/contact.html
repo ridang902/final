@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="edu.css">
+<title>Contact</title>
+
+<div class= "homelogo" style=" position:fixed;z-index:100; padding-top: 20px; margin-left: 37px; ">
+<a href="index.html">
+<img border="0" src="logo.png" alt="logo" style="height:100px;"></a>
+</div>
+
+</head>
+
+<style>
+
+.contactcaption {
+  position: sticky;
+  padding-left: 3%;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  z-index:-2;
+}
+
+.topnav {
+  position: -webkit-sticky;
+  position: fixed;  
+  top: 0;
+  background-color:white;   
+  list-style: none;
+  float: left; 
+  width: 100%;
+  z-index: 1;
+  box-shadow: -7px 7px 14px -7px;
+  margin-top: 0px;
+}
+
+.contactimg{
+  position: relative;
+  opacity: 0.69;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-image: url("contact.jpeg");
+  min-height: 1000px; 
+}
+
+</style>
+
+<body>
+
+<div class="contactimg">
+</div>
+
+<div class="topnav" id="myTopnav">
+ <div class="centernav">
+  <a href="index.html">Home</a>
+  
+  <a href="news.html">News</a>
+  
+  <a href="visit.html">Visit</a>
+  
+    <form action="campuslife.html" method="get"> 
+    <div class="dropdown">
+    <button class="dropbtn">Campus Life 
+    </button>
+    <div class="dropdown-content">
+      <a href="athletics.html">Athletics</a>
+      <a href="events.html">Events</a>
+    </div>
+  </div> 
+  </form>
+
+  <a href="about.html">About</a>
+
+    <form action="admissions.html" method="get">
+    <div class="dropdown">
+    <button class="dropbtn">Admissions 
+    </button>
+    <div class="dropdown-content">
+      <a href="courses.html">Courses</a>     
+      <a href="housing.html">Housing</a>    
+    </div>
+  </div> 
+  </form>
+
+  <a href="signup.html">Sign Up</a>
+
+    <form action="login.html" method="get">
+    <div class="dropdown">
+    <button class="dropbtn">Login
+    </button>
+    <div class="dropdown-content">
+	<a onclick="logout()" href="#">Log Out</a>    
+    </div>
+  </div> 
+  </form>
+
+    </div>
+  <a href="javascript:void(0);" style="font-size:27px;" class="icon" onclick="myFunction()">&#9776;Menu</a>
+  
+</div>
+
+<div class="contactform" style="color: white">
+
+      <form id= "website_div" class="main-div" style="display:block" onsubmit="contactFunction()">
+         <p>
+            <label>First Name:
+               <input id="firstname" type = "text" placeholder = "Richard" 
+                  required /> (Richard)
+            </label>
+         </p>
+         <p>
+            <label>Last Name:
+               <input id="lastname" type = "text" placeholder = "Dang" 
+                  required /> (Dang)
+            </label>
+         </p>
+         <p>
+            <label>Email:
+               <input id="email" type = "text" placeholder = "name@domain.com" 
+                  required /> (name@domain.com)
+            </label>
+         </p>
+         <p>
+            <label>Tel:
+<input type="text" id="phoneNumber" placeholder="(###) ### - ####" maxlength="16" pattern="(?:\(\d{3}\)|\d{3})[- ]?\d{3}[- ]?\d{4}" required /> 
+                  (###) ### - ####
+            </label>
+         </p> 
+
+  <br><p><label>Comments:<br>
+            <textarea id="Comments" type="text" name = "Comments"
+               rows = "7" cols = "49"> Comment on Website... </textarea>
+         </label></p>
+ 
+          <p>
+            <strong style="color: #FFBF00">Things you liked:</strong><br>
+           <p> <label>Site Design
+               <input id="Site_Design" name = "thingsliked" type = "checkbox" 
+                  value = "Site Design"></label></p>                            
+            <p> <label>Links
+               <input id="Links" name = "thingsliked" type = "checkbox" 
+                  value = "Links"></label></p> 
+            <p> <label>Ease of use
+               <input id="Ease_of_use" name = "thingsliked" type = "checkbox" 
+                 value = "Ease of use"></label></p> 
+            <p> <label>Images 
+               <input id="Images" name = "thingsliked" type = "checkbox" 
+                  value = "Images"></label></p>  
+            <p> <label>Source code
+               <input id="Source_code" name = "thingsliked" type = "checkbox" 
+                  value = "Source code"></label></p>
+         </p>
+
+ <p>
+            <strong style="color: #FFBF00">How did you get to our site?:</strong><br>
+
+           <p> <label>Search engine
+               <input id="How_did_you_get_to_our_site"  name = "howtosite" type = "radio"
+                  value = "Search engine" checked></label></p>
+           <p> <label>Links from another site
+               <input id="How_did_you_get_to_our_site" name = "howtosite" type = "radio" 
+                  value = "Links from another site"></label> </p>
+          <p>  <label>Deitel.com Web site
+               <input id="How_did_you_get_to_our_site" name = "howtosite" type = "radio" 
+                  value = "deitel.com"></label></p>
+          <p>  <label>Reference in a book
+               <input id="How_did_you_get_to_our_site" name = "howtosite" type = "radio" 
+                  value = "book"></label></p>
+          <p>  <label>Other
+               <input id="How_did_you_get_to_our_site" name = "howtosite" type = "radio" 
+                  value = "Other"></label></p>
+         </p>
+
+         <p>
+            <label>Rate our site: 
+
+               <select id="Rating" type="text" name = "rating">
+                  <option selected>Amazing</option>
+                  <option>10</option>
+                  <option>9</option>
+                  <option>8</option>
+                  <option>7</option>
+                  <option>6</option>
+                  <option>5</option>
+                  <option>4</option>
+                  <option>3</option>
+                  <option>2</option>
+                  <option>1</option>
+                  <option>Awful</option>
+               </select>
+            </label>
+         </p>
+
+ <button type= "submit">Submit</button><br>
+ <input type="reset" value="Clear">
+</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="edu.js"type="text/javascript"></script>
+<script src="tel.js"type="text/javascript"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyAZVjZ0VzUY8cQVXAPnGkrp78eY1nhWjLI",
+    authDomain: "dang-dang-university.firebaseapp.com",
+    databaseURL: "https://dang-dang-university.firebaseio.com",
+    projectId: "dang-dang-university",
+    storageBucket: "dang-dang-university.appspot.com",
+    messagingSenderId: "967521624875",
+    appId: "1:967521624875:web:f5cd2045b84c324b6adb6e",
+    measurementId: "G-F55L6PY0GS"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="contact.js"></script>
+
+
+</body>
+<footer>
+
+<div class = "contact">
+  <a href="contact.html">Contact Us</a>
+
+<!-- search -->
+
+<ul id="search"> 
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+    <li class= "active">
+   	 <i class="fa fa-search" aria-hidden="true"></i>
+  	  <div class ="search-box">
+      	<input name= "sitesearch" placeholder= "Search..." required>
+        <button class= "button"  type="submit">Search</button>
+      </div>
+      </li>
+	</form>
+	</ul>
+
+</div>
+
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+<a href="https://www.google.com/" class="fa fa-google"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+
+<hr>
+
+<div class = "copyright">
+<p>© 2019 Richard Dang</p>
+</div>
+
+</footer>
+</html>
